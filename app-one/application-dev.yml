@@ -1,11 +1,12 @@
 app-one-application-dev-yml: application-dev-yml
 spring:
   jpa:
+    show-sql: true
     hibernate:
       ddl-auto: none
+
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://${POSTGRES_HOSTNAME:localhost}:${POSTGRES_PORT:15432}/${POSTGRES_DB:another_one}
     username: ${POSTGRES_USER:postgres}
     password: ${POSTGRES_PASSWORD:postgres}
-
