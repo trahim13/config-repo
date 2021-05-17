@@ -6,6 +6,7 @@ spring:
       ddl-auto: none
 
   datasource:
+    type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://${POSTGRES_HOSTNAME:localhost}:${POSTGRES_PORT:15432}/${POSTGRES_DB:one}
     username: ${POSTGRES_USER:postgres}
